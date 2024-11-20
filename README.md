@@ -73,4 +73,4 @@ Dependencies
 C standard libraries: stdio.h, stdlib.h, stdbool.h, time.h.
 Known Limitations
 The number of generations is fixed at 3 and cannot be changed dynamically during execution.
-The blood type simulation does not handle rare alleles or mutations beyond 'A', 'B', and 'O'.****
+The blood type simulation does not handle rare alleles or mutations beyond 'A', 'B', and 'O'.
