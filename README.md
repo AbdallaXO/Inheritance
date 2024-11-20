@@ -1,4 +1,4 @@
-## Genetic Inheritance Simulation
+Genetic Inheritance Simulation
 Overview
 This program simulates the genetic inheritance of blood types across three generations of a family. It uses random allele assignment and recursive structures to model parent-child relationships. The resulting family tree includes details of each member's blood type and generational relationships.
 
@@ -40,3 +40,37 @@ char random_allele()
 Randomly selects a blood type allele ('A', 'B', or 'O').
 File Structure
 main.c: Contains all code for creating, printing, and freeing the family tree.
+How to Run
+Compile the program using gcc:
+
+bash
+Copy code
+gcc main.c -o inheritance
+Run the compiled program:
+
+bash
+Copy code
+./inheritance
+The program will output the family tree of blood types.
+
+Example Output
+bash
+Copy code
+Child (Generation 0): blood type AB
+    Parent (Generation 1): blood type AO
+        Grandparent (Generation 2): blood type BO
+        Grandparent (Generation 2): blood type AA
+    Parent (Generation 1): blood type BO
+        Grandparent (Generation 2): blood type AB
+        Grandparent (Generation 2): blood type OO
+Notes
+The GENERATIONS constant is fixed at 3. To modify the number of generations, update this constant and adjust the logic accordingly.
+The INDENT_LENGTH constant controls the number of spaces used for indentation.
+Memory Management
+The program dynamically allocates memory for each person using malloc. Ensure all memory is freed by calling free_family after printing the family tree.
+
+Dependencies
+C standard libraries: stdio.h, stdlib.h, stdbool.h, time.h.
+Known Limitations
+The number of generations is fixed at 3 and cannot be changed dynamically during execution.
+The blood type simulation does not handle rare alleles or mutations beyond 'A', 'B', and 'O'.****
