@@ -1,7 +1,3 @@
-Certainly! Below is an example of how you can document your code using GitHub-flavored Markdown. This documentation will explain the purpose of the program, describe each function, and provide an overview of the code structure.
-
----
-
 # Family Tree Simulation (Blood Type Inheritance)
 
 This C program simulates the inheritance of blood type alleles over three generations. It uses a recursive approach to generate a family tree, where each person has two parents, and each parent has a random blood type allele (`A`, `B`, or `O`). The child inherits one allele from each parent.
